@@ -64,7 +64,7 @@ namespace ListsTest
             LinkedList<bool> list = new();
             for (int i = 0; i < 1000000; i++)
             {
-                list.AddFirst(true);
+                list.AddLast(true);
             }
         }
 
@@ -74,7 +74,7 @@ namespace ListsTest
             LinkedList<bool> list = new();
             for (int i = 0; i < 1000000; i++)
             {
-                list.AddFirst(i % 2 == 0);
+                list.AddLast(i % 2 == 0);
             }
         }
 
@@ -84,7 +84,7 @@ namespace ListsTest
             LinkedList<bool> list = new();
             for (int i = 0; i < 1000000; i++)
             {
-                list.AddFirst(rnd.Next(1, 10001) % 2 == 0);
+                list.AddLast(rnd.Next(1, 10001) % 2 == 0);
             }
         }
 
@@ -116,7 +116,7 @@ namespace ListsTest
             LinkedList<bool> list = new();
             for (int i = 0; i < 1000000; i++)
             {
-                list.AddFirst(differentValues[i]);
+                list.AddLast(differentValues[i]);
             }
         }
 
@@ -126,7 +126,7 @@ namespace ListsTest
             LinkedList<bool> list = new();
             for (int i = 0; i < 1000000; i++)
             {
-                list.AddFirst(randomValues[i]);
+                list.AddLast(randomValues[i]);
             }
         }
     }
